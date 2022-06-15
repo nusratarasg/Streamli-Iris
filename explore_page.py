@@ -15,7 +15,7 @@ def show_explore_page():
     df = df.rename(columns={'Sepal.Length':'Sepal Length','Sepal.Width':'Sepal Width','Petal.Length': 'Petal Length', 'Petal.Width': 'Petal Width'})
     df = df.dropna()
     data = "iris.csv"
-    st.write(f"##    Dataset Name:  {data} ")
+    st.write(f"##    Dataset:  {data} ")
     st.write('Shape of dataset:', df.shape)
     c = df['Species'].nunique()
     st.write('number of classes:', c)
